@@ -85,14 +85,14 @@ $(document).ready(function() {
 			
 			// Populate infos panel from json file
 			for (let i = 0; i < json.features.length; i++) {
-				$('#listInfos').append('<div class="infoItem"><a class="nom" id="' + json.features[i].id + '" href="#">' + json.features[i].properties.name + "</a><br>" +
+				$('#listInfos').append('<div class="infoItem"><a class="name" id="' + json.features[i].id + '" href="#">' + json.features[i].properties.name + "</a><br>" +
 				json.features[i].properties.address + "<br>" + json.features[i].properties.phone + "<br>" + json.features[i].properties.mail + "<br>" +
 				json.features[i].properties.others +
 				'</div><br>');
 			}
 			
 			// Or use https://gis.stackexchange.com/questions/345426/simulate-click-to-map-on-specific-coordinates-and-layer-in-openlayers
-			$("a.nom").click(function(event) {
+			$("a.name").click(function(event) {
 				feature = vectorSource.getFeatureById(this.id);
 				
 				const name = feature.get('name');
