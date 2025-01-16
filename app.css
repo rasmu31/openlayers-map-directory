@@ -1,0 +1,36 @@
+html {font-size: 1.2rem;}
+#container {
+	display: grid;
+	grid-template-areas:
+	"menu content";
+	grid-template-columns: 2fr 2fr;
+	gap: 5px;
+	width: 100%;
+}
+#container > div {
+	padding: 10px;
+}
+#container > div.menu {
+	grid-area: menu;
+}
+#container > div.content {
+	grid-area: content;
+}
+#map {max-width: 1200px; height: 800px;}
+h1 {font-size: 130%; margin: 0 0 10px 0;}
+#listInfos .infoItem {border-bottom: 1px black dotted; padding: 0 0 20px 0;}
+#importButton {padding: 5px 20px; margin: 0px 0px 20px 0px; height:unset; font-size: 1rem;}
+a, a:visited {color: #098BCC;}
+
+@media (max-width: 1240px) {
+	#container {
+		width: unset;
+		display: inline-table;
+	}
+}
+
+@media (max-width: 570px) {
+	#map {
+		height:400px;
+	}
+}
