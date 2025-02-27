@@ -8,6 +8,8 @@ Change properties names to your needs in json file and edit your js code to refl
 
 There is some interaction feedback : entry is highlighted when you click on a marker and an entry.
 
+Watch [demo.mp4](https://github.com/rasmu31/openlayers-map-directory/blob/main/demo.mp4) to see how it works.
+
 Javascript base library used : OpenLayers (v10.3.1)<br/>
 OpenLayers : https://openlayers.org/
 
