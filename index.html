@@ -1,28 +1,48 @@
 <!doctype html>
 <html lang="fr">
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carte</title>
 	<script src="jquery-latest.min.js"></script>
 	<script src="ol.js"></script>
 	<script src="ol-popup.js"></script>  
 	<script src="app.js"></script>
 	<link rel="stylesheet" href="ol.css">
-	<link rel="stylesheet" href="ol-popup.css" />
-	<link rel="stylesheet" href="app.css" />
+	<link rel="stylesheet" href="ol-popup.css">
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="fontawesome.all.min.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
 </head>
 
 <body>
 	<div id="container">
-		<div class="menu">
+		<div id="menu">
 			<div id="map"></div>
+		
+			<div id="notes">
+				<div>Notes</div>
+			</div>
 		</div>
 		
-		<div class="content">
+		<div id="content">
 			<div>
-				<h1>Directory.</h1>
+				<h1>Annuaire</h1>
 			</div>
-			<div>Import data : <input type="file" id="importButton" class="" value="Import"></div>
+			
+			<div>Sélectionner une catégorie :
+				<select>
+					<option>Vignobles</option>
+					<option>Restaurateurs</option>
+					<option>Partenaires</option>
+					<option>Salons</option>
+					<option>Mes coups de coeur</option>				
+					<option>Divers</option>
+				</select>
+			</div>
 			<br>
+			
+			<div id="errors_block"></div>
 			<div id="listInfos"></div>
 		</div>
   

@@ -33,8 +33,10 @@
 }
 
 .ol-popup-content {
-    min-width: 170px;
-    max-height: 200px;
+	width: max-content;
+    max-width: 15vw;
+	height: fit-content;
+	max-height: 30vh;
     overflow-x: auto;
 }
 
