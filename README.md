@@ -2,8 +2,10 @@
 OpenStreetMap OpenLayers map with directory. Import entries from a local json file.
 
 Use Openstreetmap to display a map with clickable markers, points are generated from a json files stored in the same dir.<br/>
-If you need more information to display, you can add a "More info" record in json file.
-Json file is in french, I'm sorry don't want to bother to translate each time I make an update. I hope you'll understand easily.
+If you need more information to display, you can add a "More info" record in json file.<br/>
+Json file is in french, I'm sorry I don't want to bother to translate each time I make an update. I hope you'll understand easily.<br/>
+Change properties names to your needs in json file and edit your js code to reflect properties names.<br/>
+
 There is some interaction feedback : entry is highlighted when you click on a marker and an entry.
 
 Javascript base library used : OpenLayers (v10.3.1)<br/>
@@ -61,12 +63,15 @@ var newLayer = new ol.layer.Tile({
 ```
 
 2) Create a json file to store entries and put it on the same dir.<br/>
-Sample : see infos.json
-json properties names are in french but you'll understand easily.
+Sample : see infos.json<br/>
+json properties names are in french but you'll understand easily.<br/>
 Change these names to your needs, don't forget to change js code accordingly.
 
 3) If you need a "More info" text, you can set it in json file by adding a "autres_plus_texte" property.
-Eg : "autres_plus_texte": "Other infos<br><br>block longerblablabla<br><br>dfdfdsfsdff  sdfsff s<br><br><a target=\"_blank\" href=\"https://google.fr\">Link</a>"
+Eg :
+```
+"autres_plus_texte": "Other infos<br><br>block longerblablabla<br><br>dfdfdsfsdff  sdfsff s<br><br><a target=\"_blank\" href=\"https://google.fr\">Link</a>"
+```
 
 4) Play with it.<br/>
 Launch https://example/index.html<br/>
