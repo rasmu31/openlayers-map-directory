@@ -119,7 +119,7 @@ $(document).ready(function() {
 			const others_more = trailheads[0].get('autres_plus_texte');
 			others_more_text = "";
 			if (others_more != undefined)
-				others_more_text += "<br>" + others_more;
+				others_more_text += '<div class="others_more"><br>' + others_more + '</div>';
 			
 			popup.show(trailheads[0].getGeometry().getCoordinates(), `<b>${name}</b><br>${address}<br>${phone}<br>${mail}<br>${others}${others_more_text}`);
 		}
